@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="13sp"
+    android:paddingRight="13sp" >
+
+    <TextView
+        android:id="@+id/contactsTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="left"
+        android:paddingTop="20sp"
+        android:text="@string/textView_emergency_contacts" />
+
+    <EditText
+        android:id="@+id/edit_contacts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_contacts"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/destinationTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="left"
+        android:paddingTop="10sp"
+        android:text="@string/textView_destination" />
+
+    <EditText
+        android:id="@+id/edit_destination"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_destination"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/hostTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="left"
+        android:paddingTop="10sp"
+        android:text="@string/textView_host" />
+
+    <EditText
+        android:id="@+id/edit_host"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_host"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:ems="10"
+        android:gravity="bottom|left"
+        android:text="@string/textView_pingFrequency" />
+
+    <SeekBar
+        android:id="@+id/seekbarPingFrequency"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="24"
+        android:paddingBottom="15sp" />
+
+    <Button
+        android:id="@+id/buttonSelectDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_setDate" />
+
+    <Button
+        android:id="@+id/buttonSelectTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_setTime" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_startTrip" />
+
+</LinearLayout>
