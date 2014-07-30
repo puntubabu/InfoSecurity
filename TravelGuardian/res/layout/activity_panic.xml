@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="17sp"
+    android:paddingRight="17sp" >
+
+    <TextView
+        android:id="@+id/panicText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/panic"
+        android:textColor="#93c7fc" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvContactEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/tvPanicTextPart1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/panicMessagePart1"
+        android:textColor="#ffffff" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvPanicUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvPanicTextPart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/panicMessagePart2" 
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/tvPanicDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/destination" />
+
+    <TextView
+        android:id="@+id/tvPanicDestinationVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvPanicHostContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hostContact" />
+
+    <TextView
+        android:id="@+id/tvPanicHostContactVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvPanicGPSLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GPSLoc" />
+
+    <TextView
+        android:id="@+id/tvPanicGPSLocVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+

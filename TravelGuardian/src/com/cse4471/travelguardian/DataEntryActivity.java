@@ -1,12 +1,14 @@
 package com.cse4471.travelguardian;
 
 import java.util.Calendar;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v4.app.Fragment;
+
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,10 +16,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.TextView;
-import android.widget.TimePicker;
+import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.TextView;
+import android.widget.TimePicker;
 
 public class DataEntryActivity extends ActionBarActivity implements OnSeekBarChangeListener{
 	
@@ -34,16 +37,19 @@ public class DataEntryActivity extends ActionBarActivity implements OnSeekBarCha
 	Button btnSelectDate, btnSelectTime;
 
 	// Variables to store user selected date and time
-	public int year, month, day, hour, minute;
+	public static int year, month, day, hour, minute;
 
 	// Variables to display/set the date and time
-	private int mYear, mMonth, mDay, mHour, mMinute; 
+	public static int mYear, mMonth, mDay, mHour, mMinute; 
 
+	public static UserSessionManager session;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_data_entry);
-		
+        session = new UserSessionManager(getApplicationContext());
+
 		// Load SeekBar object and listener     
         bar = (SeekBar)findViewById(R.id.seekbarPingFrequency);
         bar.setOnSeekBarChangeListener(this);
@@ -202,6 +208,21 @@ public class DataEntryActivity extends ActionBarActivity implements OnSeekBarCha
 					mTimeSetListener, mHour, mMinute, false);
 		}
 		return null;
+	}
+	
+	// Called when the user clicks the Start a Trip button 
+	public void startTrip(View view) {
+		EditText etContactEmail = (EditText) findViewById(R.id.edit_contacts);
+		EditText etDestination = (EditText) findViewById(R.id.edit_destination);
+		EditText etHostContact = (EditText) findViewById(R.id.edit_host);
+
+		session.storeContactEmail(etContactEmail.getText().toString());
+		session.storeDestination(etDestination.getText().toString());
+		session.storeHostContact(etHostContact.getText().toString());
+		
+		Intent next = new Intent(getApplicationContext(), ActiveTripActivity.class);    
+	    startActivity(next);
+	    finish();
 	}
 
 }

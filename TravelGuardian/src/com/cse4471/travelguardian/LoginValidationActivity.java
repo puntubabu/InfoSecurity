@@ -19,32 +19,31 @@ public class LoginValidationActivity extends ActionBarActivity {
     private EditText userNameEditableField;
     private EditText passwordEditableField;
     private final static String OPT_NAME = "name";
-	
+    public static UserSessionManager session;
+    
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_login_validation);
 
+        session = new UserSessionManager(getApplicationContext());
+        
         this.userNameEditableField = (EditText) this
                 .findViewById(R.id.etUsername);
         this.passwordEditableField = (EditText) this
                 .findViewById(R.id.etPassword);
+  
 	}
 
 	
 	private void validateLogin(){
-        String username = this.userNameEditableField.getText().toString();
+        String username = this.userNameEditableField.getText().toString();        
         String password = this.passwordEditableField.getText().toString();
         this.dh = new DatabaseHelper(this);
         List<String> names = this.dh.selectAll(username, password);
         if (names.size() > 0) { // Login successful
             // Save username as the name of the player
-            SharedPreferences settings = PreferenceManager
-                    .getDefaultSharedPreferences(this);
-            SharedPreferences.Editor editor = settings.edit();
-            editor.putString(OPT_NAME, username);
-            editor.commit();
-
+        	session.createUserLoginSession(username);
             // Bring up the Home screen
             this.startActivity(new Intent(this, StartActivity.class));
             this.finish();

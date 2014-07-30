@@ -22,10 +22,26 @@
     <string name="button_setTime">Set Return Time</string>
     <string name="button_startTrip">Start Trip</string>
     <string name="signup">Sign Up</string>
-    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_sign_up">Travel Guardian: Sign Up</string>
     <string name="hintUsername">Username</string>
     <string name="hintPassword">Password</string>
     <string name="hintConfirmPassword">Confirm Password</string>
-    <string name="title_activity_login_validation">LoginValidationActivity</string>
+    <string name="title_activity_login_validation">Travel Guardian: Login</string>
+    <string name="title_activity_active_trip">Travel Guardian: Active Trip</string>
+    <string name="timerText1">You have</string>
+    <string name="timerText2">until the end of the trip\n\n</string>
+    <string name="timerButton1">Panic!</string>
+    <string name="timerButton2">End Trip</string>
+    <string name="title_activity_global_class">GlobalClass</string>
+    <string name="title_activity_panic">Travel Guardian: Panic!</string>
+    <string name="panic">The following emergency message has been sent to:</string>
+    <string name="panicMessagePart1">**TRAVEL GUARDIAN EMERGENCY BROADCAST**
+        \n\nYou are receiving this message because </string>
+    <string name="panicMessagePart2"> has failed to return from a planned destination. You are their emergency contact.\n</string>
+    <string name="destination">\nDestination: </string>
+    <string name="hostContact">\nHost Contact: </string>
+    <string name="GPSLoc">\nLast Known GPS Location: </string>
+    <string name="title_activity_end_trip">Travel Guardian: End Trip</string>
+	<string name="endTrip">Your trip is successfully completed\n\n</string>
 
 </resources>

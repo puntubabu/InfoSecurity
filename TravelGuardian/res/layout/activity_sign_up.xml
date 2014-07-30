@@ -14,7 +14,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="127dp"
         android:ems="10"
-        android:hint="@string/hintUsername" >
+        android:hint="@string/hintUsername"
+        android:textColorHint="#ffffff" >
 
         <requestFocus />
     </EditText>
@@ -28,7 +29,8 @@
         android:layout_marginTop="14dp"
         android:ems="10"
         android:hint="@string/hintPassword"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="#ffffff" />
 
     <EditText
         android:id="@+id/etConfirmPassword"
@@ -39,7 +41,8 @@
         android:layout_marginTop="14dp"
         android:ems="10"
         android:hint="@string/hintConfirmPassword"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="#ffffff" />
 
     <Button
         android:id="@+id/btnSignUp"

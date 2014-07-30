@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+    <color name="bgcolor">#0f61b5</color>
+
+    <style name="Theme.Travelguardian" parent="@style/Theme.AppCompat">
+        <item name="android:windowBackground">@color/bgcolor</item>
+		<item name="android:colorBackground">@color/bgcolor</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_travelguardian</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Travelguardian</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Travelguardian</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Travelguardian</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Travelguardian</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Travelguardian</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_travelguardian</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_travelguardian</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Travelguardian</item>
+        <item name="android:buttonStyle">@style/ButtonTravelGuardian</item>        
+    </style>
+
+    <style name="ActionBar.Solid.Travelguardian" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_travelguardian</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_travelguardian</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_travelguardian</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Travelguardian</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Travelguardian" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_travelguardian</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Travelguardian</item>
+    </style>
+    
+    <style name="ButtonTravelGuardian" parent="android:Widget.Button">
+	  <item name="android:background">@drawable/travelguardian_btn_default_holo_light</item>
+	  <item name="android:minHeight">48dip</item>
+	  <item name="android:minWidth">64dip</item>
+	  <item name="android:textColor">#9cccfd</item>
+  </style>
+
+  <style name="ImageButtonTravelGuardian" parent="android:Widget.Holo.Light.ImageButton">
+	  <item name="android:background">@drawable/travelguardian_btn_default_holo_light</item>
+  </style>
+
+  <style name="ProgressBarTravelGuardian" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/travelguardian_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/travelguardian_progress_indeterminate_horizontal_holo_light</item>
+  </style>
+
+  <style name="SeekBarTravelGuardian" parent="android:Widget.Holo.Light.SeekBar">
+      <item name="android:progressDrawable">@drawable/travelguardian_scrubber_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/travelguardian_scrubber_progress_horizontal_holo_light</item>
+      <item name="android:thumb">@drawable/travelguardian_scrubber_control_selector_holo_light</item>
+  </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Travelguardian.Widget" parent="@style/Theme.AppCompat">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Travelguardian</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Travelguardian</item>
+    </style>
+
+</resources>

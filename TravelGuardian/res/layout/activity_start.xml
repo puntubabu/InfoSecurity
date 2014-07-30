@@ -16,8 +16,14 @@
         android:layout_height="20dp"
         android:ems="10"
         android:gravity="center_horizontal"
-        android:text="@string/logged_in_as" >
+        android:text="@string/logged_in_as"
+        android:textColor="#ffffff" >
     </TextView>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/usernameTextView"
@@ -25,15 +31,15 @@
         android:layout_height="20dp"
         android:ems="10"
         android:gravity="center_horizontal"
-        android:text="@string/username"
-        android:textStyle="bold" >
+        android:textStyle="bold"
+        android:textColor="#ffffff" >
     </TextView>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:onClick="sendOut"
-        android:text="@string/button_sign_out" />
+        android:onClick="signOut"
+        android:text="@string/button_sign_out"/>
 
     <Button
         android:layout_width="fill_parent"

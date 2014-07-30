@@ -16,14 +16,16 @@
         android:ems="10"
         android:gravity="left"
         android:paddingTop="20sp"
-        android:text="@string/textView_emergency_contacts" />
+        android:text="@string/textView_emergency_contacts"
+        android:textColor="#93c7fc" />
 
     <EditText
         android:id="@+id/edit_contacts"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/edit_contacts"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:textColorHint="#ffffff" />
 
     <TextView
         android:id="@+id/destinationTextView"
@@ -32,14 +34,16 @@
         android:ems="10"
         android:gravity="left"
         android:paddingTop="10sp"
-        android:text="@string/textView_destination" />
+        android:text="@string/textView_destination"
+        android:textColor="#93c7fc" />
 
     <EditText
         android:id="@+id/edit_destination"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/edit_destination"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:textColorHint="#ffffff" />
 
     <TextView
         android:id="@+id/hostTextView"
@@ -48,14 +52,16 @@
         android:ems="10"
         android:gravity="left"
         android:paddingTop="10sp"
-        android:text="@string/textView_host" />
+        android:text="@string/textView_host"
+        android:textColor="#93c7fc" />
 
     <EditText
         android:id="@+id/edit_host"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/edit_host"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:textColorHint="#ffffff" />
 
     <TextView
         android:id="@+id/textViewProgress"
@@ -63,14 +69,16 @@
         android:layout_height="40sp"
         android:ems="10"
         android:gravity="bottom|left"
-        android:text="@string/textView_pingFrequency" />
+        android:text="@string/textView_pingFrequency"
+        android:textColor="#ffffff" />
 
     <SeekBar
         android:id="@+id/seekbarPingFrequency"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:max="24"
-        android:paddingBottom="15sp" />
+        android:paddingBottom="15sp"
+        android:drawable="@drawable/travelguardian_progress_horizontal_holo_light"/> 
 
     <Button
         android:id="@+id/buttonSelectDate"
@@ -87,6 +95,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_startTrip" />
+        android:text="@string/button_startTrip"
+        android:onClick="startTrip" />
 
 </LinearLayout>

@@ -14,7 +14,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
         android:ems="10"
-        android:hint="@string/hintUsername" />
+        android:hint="@string/hintUsername"
+        android:textColorHint="#ffffff" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -24,9 +25,8 @@
         android:layout_centerVertical="true"
         android:ems="10"
         android:hint="@string/hintPassword"
-        android:inputType="textPassword" >
-
-    </EditText>
+        android:inputType="textPassword"
+        android:textColorHint="#ffffff" />
 
     <Button
         android:id="@+id/btnLoginValid"

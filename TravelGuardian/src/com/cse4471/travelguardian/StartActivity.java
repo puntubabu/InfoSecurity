@@ -1,7 +1,7 @@
 package com.cse4471.travelguardian;
 
+
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,15 +10,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.TextView;
 
 public class StartActivity extends ActionBarActivity {
-
+	
+	UserSessionManager session;
+	TextView username;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start);
-
+		session = new UserSessionManager(getApplicationContext());
+		
+		//Find tvName and set name to current user's name
+		username = (TextView)findViewById(R.id.tvName);
+		username.setText(session.getUserDetails().get("name").toString());
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
@@ -64,7 +71,7 @@ public class StartActivity extends ActionBarActivity {
 	
 	/** Called when the user clicks the Sign Out button */
 	public void signOut(View view) {
-	    // Do something in response to button
+	    session.logoutUser();
 	}
 	
 	/** Called when the user clicks the Start a Trip button */

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Theme.Travelguardian" parent="@style/Theme.AppCompat">
+        <item name="actionBarItemBackground">@drawable/selectable_background_travelguardian</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Travelguardian</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Travelguardian</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Travelguardian</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Travelguardian</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Travelguardian</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_travelguardian</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_travelguardian</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Travelguardian</item>        
+    </style>
+
+    <style name="ActionBar.Solid.Travelguardian" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_travelguardian</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_travelguardian</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_travelguardian</item>
+        <item name="progressBarStyle">@style/ProgressBar.Travelguardian</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Travelguardian" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/ab_transparent_travelguardian</item>
+        <item name="progressBarStyle">@style/ProgressBar.Travelguardian</item>
+    </style>
+	
+    <style name="PopupMenu.Travelguardian" parent="@style/Widget.AppCompat.PopupMenu">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_travelguardian</item>	
+    </style>
+	
+    <style name="DropDownListView.Travelguardian" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_travelguardian</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Travelguardian" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_travelguardian</item>
+    </style>
+	
+    <style name="DropDownNav.Travelguardian" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_travelguardian</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_travelguardian</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_travelguardian</item>
+    </style>
+    
+    <style name="ProgressBar.Travelguardian" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_travelguardian</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Travelguardian" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_travelguardian</item>
+    </style>
+    
+     <style name="SeekBarTravelGuardian" parent="android:Widget.SeekBar">
+      <item name="android:progressDrawable">@drawable/travelguardian_scrubber_progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/travelguardian_scrubber_progress_horizontal_holo_light</item>
+      <item name="android:minHeight">13dip</item>
+      <item name="android:maxHeight">13dip</item>
+      <item name="android:thumb">@drawable/travelguardian_scrubber_control_selector_holo_light</item>
+      <item name="android:thumbOffset">16dip</item>
+      <item name="android:paddingLeft">16dip</item>
+      <item name="android:paddingRight">16dip</item>
+  </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Travelguardian.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Travelguardian</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Travelguardian</item>
+    </style>
+
+</resources>
